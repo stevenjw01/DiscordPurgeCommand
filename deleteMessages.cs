@@ -24,78 +24,12 @@ namespace IdiotBOT.Modules.Admin
             string channelID = Context.Channel.Id.ToString();
             
 
-            if (channelID == "SET YOUR CHANNEL ID HERE" || channelID == "SET YOUR CHANNELID HERE") //You can add more or only one here
-            {
-                await Context.Message.DeleteAsync();
-                
-                if(Context.User.Id == SET USERS HERE || Context.User.Id == SET USERS HERE)// No "" Only the ID of the person on Discord
+            if(Context.User.Id == USER ID HERE || Context.User.Id == USER ID HERE) // NO "" ONLY USER ID NUMBER BLANK
                 {
-
-                    if (amount == 1)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 2)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 3)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 4)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 5)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 6)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 7)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 8)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 9)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else if (amount == 10)
-                    {
-                        var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
-                        await Context.Channel.DeleteMessagesAsync(messages);
-
-                    }
-                    else
-                    {
-                        await ReplyAsync("Use a number as your arguments. Ex " + BotConfig.Load().Prefix + "<amount>");
-                        return;
-                    }
+                  
+                   var messages = await Context.Channel.GetMessagesAsync(amount + 1).Flatten();
+                   await Context.Channel.DeleteMessagesAsync(messages);               
+                
                 }
                 else
                 {
