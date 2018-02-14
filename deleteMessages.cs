@@ -13,7 +13,8 @@ using System.Collections.Concurrent;
 using System.IO;
 using IdiotBOT; //Set to your bot
 
-
+//Steven Williams
+//Discord Purge Command
 namespace IdiotBOT.Modules.Admin
 {
     public class deleteMessages : ModuleBase
